@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FORM</title>
+</head>
+<body>
+<!-- elemen form yaitu input, textarea, select, button,label -->
+<!-- input type ada text, password, radio, checkbox -->
+
+<form>
+	<label for="username">username : </label>
+	<input type="text" name="username" id="username">
+	<!-- jadi id harus sama dengan for -->
+	<!-- kenapa demikian, agar ketika kita klik label, di input juga ke klik -->
+
+	<br><br>
+	<label for="password">password :</label>
+	<input type="password" name="password" id="password">
+
+	<br><br>
+	<input type="radio" name="jenis_klmn" id="pria"><label for="pria">pria</label>
+	<input type="radio" name="jenis_klmn" id="wanita"><label for="wanita">wanita</label>
+	<!-- khusus untuk radiobutton, agar bisa dipilih salah satu gunakan grouping yaitu dengan menambahkan attribut name di input -->
+
+	<br><br>
+	<input type="checkbox" name="hobi" id="menyanyi"><label for="menyanyi">menyanyi</label>
+	<input type="checkbox" name="hobi" id="olahraga"><label for="olahraga">olahraga</label>
+	<input type="checkbox" name="hobi" id="membaca"><label for="membaca">membaca</label>
+
+	<br><br>
+	<label>textarea : </label><textarea></textarea>
+
+	<br><br>
+	<select>
+		<option>Jakarta</option>
+		<option>Bandung</option>
+		<option>Tangerang</option>
+	</select>
+
+	<br><br>
+	<button type="submit">kirim</button>
+	<button type="reset"> reset </button>
+</form>
+
+<br><br><br><br><br><br>
+
+
+<table border="1" cellspacing="0" cellpadding="20">
+	<form>
+		<tr>
+			<td><label for="username">username : </label></td>
+			<td><input type="text" name="username" id="username"></td>
+		</tr>
+
+		<tr>
+			<td><label for="password">password :</label></td>
+			<td><input type="password" name="password" id="password"></td>
+		</tr>
+
+		<tr>
+			<td colspan="2" align="center">
+				<input type="radio" name="jenis_klmn" id="pria"><label for="pria">pria</label>
+				<input type="radio" name="jenis_klmn" id="wanita"><label for="wanita">wanita</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="hobi" id="menyanyi"><label for="menyanyi">menyanyi</label>
+				<input type="checkbox" name="hobi" id="olahraga"><label for="olahraga">olahraga</label>
+				<input type="checkbox" name="hobi" id="membaca"><label for="membaca">membaca</label>
+
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+		</tr>
+	</form>
+</table>
+
+</body>
+</html>

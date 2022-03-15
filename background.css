@@ -1,0 +1,18 @@
+/*
+	background-color -> mengatur warna background
+	background-image -> mengatur gambar yang akan digunakan pd background
+	background-position -> mengatur posisi gambar pada background
+	background-repeat -> mengatur jenis pengulangan gambar pada background
+*/
+
+body {
+	background-color: lightblue;
+	background-image: url();
+	/*backgroun-position : top-left,top-center,top-right,center-left,center-center,center-right,bottom-left,bottom-center,bottom-right;*/
+	/*x%,y%,x-pos,y-pos*/
+	/*background-repeat: repeat-x, repeat-y, non-repeat;*/
+
+	/*shorthand*/
+	/*background: color url() position repeat*/
+	/*background: lightgreen url(bg.png) top left non-repeat */
+}

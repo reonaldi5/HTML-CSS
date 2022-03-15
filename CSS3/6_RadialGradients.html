@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RADIAL GRADIENTS</title>
+
+
+	<style type="text/css">
+		
+		/*
+			background-image:  radial-gradient(warna awal, warna akhir);
+			Sama seperti linear, radial bisa lebih dari 2 warna
+
+			radial-gradient(
+				<tipe>(ellipse & circle) <jangkauan> at <posisi-y> <posisi-x>,
+				<warna1>,
+				<warna2>,
+				...,
+				<warna-n>
+			);
+
+			<jangkauan>
+
+			- closest-corner
+				jarak dari pusat gradient ke sudut terdekat elemen
+
+			- closest-side
+				jarak dari pusat gradient ke sisi terdekat elemen
+
+			- farthest-corner
+				jarak dari pusat gradient ke sudut terjauh elemen
+
+			- farthest-side
+				jarak dari pusat gradient ke sisi terjauh elemen
+		*/
+
+
+		div {
+			width: 600px;
+			height: 600px;
+			margin: 30px auto;
+			background-image: radial-gradient(
+				circle farthest-side at top left, red, blue);
+		}
+
+	</style>
+</head>
+<body>
+
+	<div></div>
+
+</body>
+</html>

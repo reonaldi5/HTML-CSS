@@ -1,0 +1,40 @@
+body {
+	font-family: arial;
+}
+
+h1, h2 {
+	color: green;
+}
+
+ul li a {
+	/*jika spasi itu di dalam bacanya, jadi css tolong pilihkan a di dalam li di dalam ul*/
+	color: orange;
+}
+
+ol li a {
+	color: darkred;
+}
+
+/*untuk id awalkan dengan tanda pagar*/
+
+#p1 {
+	color: orange;
+}
+
+/*jika class awalkan dengan titik*/
+
+.p2 {
+	color: red;
+}
+
+.cetak-tebal {
+	font-weight: bold;
+}
+
+p.cetak-tebal {
+	font-size: 30px;
+}
+
+.p2.cetak-tebal {
+	font-style: oblique;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Opacity</title>
+
+	<style type="text/css">
+		body {
+			background-image: url(coding.jpg);
+		}
+
+		.satu {
+			width: 300px;
+			height: 300px;
+			background-color: hsla(24, 100%, 63%, 0.5);
+			/*opacity: .5;*/
+			/*opacity value nya dr 0-1
+			value di css, jika 0.5, bisa ditulis .5
+			*/
+			/*
+			rgba(255, 102, 0, 0.5)
+			hsla(hue(roda warna) saturation lightness alpha)*/
+
+			position: relative;
+		}
+
+		.dua {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			/*ini otomatis terkena tranparan dari div satu
+				dia mewarisi dari parent
+			*/
+
+
+			position: absolute;
+			right: -50px;
+			bottom: -50px;
+			/*opacity: .5;*/
+			/*opacity di dalam opacity div satu
+				dan 0.5 itu diambil dari 0.5 opacity dari div satu
+			*/
+		}
+	</style>
+</head>
+<body>
+
+	<div class="satu">
+		<div class="dua"></div>
+	</div>
+
+</body>
+</html>

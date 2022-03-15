@@ -1,0 +1,67 @@
+div {
+	/*display: inline;*/
+	/*ingat, klo pake inline, ukuran tidak bisa dirubah*/
+
+	/*display: inline-block;*/
+	/*jadi dia sejajar karena inline,
+	dan bisa diatur ukuran karena block
+	jadi gabungan antara inline dan block*/
+
+	/*jika pake inline block, maka ada jarak spasi sedikit,
+	walaupun tidak menambahkan margin*/
+}
+
+.satu {
+	width: 200px;
+	height: 200px;
+	background-color: lightgreen;
+	/*margin-left: 100px;*/
+	/*margin-top: 30px;*/
+	/*margin-bottom: 150px;*/
+	/*margin-right: 30px;*/
+
+
+	/*margin-bottom: 30px;*/
+
+
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*jika auto akan ditengah tengah parent nya, parent dari div yaitu body*/
+
+	/*margin: 50px;*/
+	/*jika seperti ini kesemua sisi margin nya 50px*/
+
+	/*margin: 50px 100px;*/
+	/*jika ada 2 value, maka value 1 untuk atas dan bawah,
+	value 2 untuk kanan dan kiri*/
+
+	/*margin: 30px 50px 40px;*/
+	/*value 1 atas, value 2 kiri kanan, value 3 bawah*/
+
+	margin: 10px 20px 30px 40px;
+	/*value 1 atas, value 2 kanan, value 3 bawah, value 4 kiri
+		jadi searah jarum jam
+	*/
+}
+
+.dua {
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	/*margin-top: 50px;*/ 
+	/*jika teori vertical(margin yang diambil adalah margin yang paling besar),overlapping margin, tidak ada penambahan margin,
+	karena class satu sudah ada margin bottom*/
+
+	/*margin-left: 20px;*/
+	/*jika teori horizontal, tidak ada overlapping margin,
+	jadi terdapat penambahan margin dari class satu dan class dua*/
+
+
+	/*margin-top: -20px;*/
+}
+
+.tiga {
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+}

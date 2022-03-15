@@ -1,0 +1,50 @@
+/*
+	Position(static,relative,absolute,fixed)
+	 jika kita tidak memberikan position pada elemen,
+	 maka default position nya static
+
+*/
+
+body {
+	height: 2000px;
+}
+
+.container {
+	width: 650px;
+	height: 650px;
+	border: 10px solid green;
+	position: relative;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}
+
+.satu {
+	background-color: lightgreen;
+}
+
+.dua {
+	background-color: violet;
+	/*position: relative;*/
+	/*jika position non static, position pnya akses ke top, left dll*/
+	/*top: 30px;*/
+
+	position: absolute;
+	/*kotak gold sembunyi dibalik kotak violet*/
+	/*left: 50px;*/
+	/*top: 100px;*/
+	top: 0;
+	left: 0;
+}
+
+.tiga {
+	background-color: gold;
+	position: fixed;
+	height: 40px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
